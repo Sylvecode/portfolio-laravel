@@ -1,0 +1,135 @@
+@extends('layout')
+
+@section('title', 'Portfolio Sylvain Périé')
+
+@section('content')
+
+<div id="welcome"></div>
+
+    <script>
+        const message = "Bienvenue sur mon portfolio";
+        const target = document.getElementById("welcome");
+        let index = 0;
+
+        // Fonction pour afficher la phrase progressivement
+        function typeWriter() {
+            if (index < message.length) {
+                target.textContent += message[index];
+                index++;
+                setTimeout(typeWriter, 70); // Délai entre chaque lettre (100ms)
+            }
+        }
+
+        // Lancer l'animation au chargement de la page
+        typeWriter();
+    </script>
+
+<div class="flex sm:flex sm:justify-center sm:items-center  flex-col">
+    <div class=" p-6 lg:p-8">
+        <div class="flex justify-center">
+            <img src="profile_pic_sylvain.jpg" class="imgSylv rounded-full border-10 border-white"
+                style="width: 220px; height: 220px; border: 2px solid white; object-fit:cover; object-position: 50% 20%; margin-top:20px;">
+        </div>
+        <div class="flex justify-center" style="margin-top: 40px">
+            <p>Développeur Web & Web Mobile junior en recherche d'emploi / alternance à distance en France ou à
+                l'étranger</p>
+        </div>
+    </div>
+
+    <div class="max-w-7xl p-6 lg:p-8">
+
+        <div class="mt-16">
+            <div class="flex">
+                <a href="{{ url('/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-book" viewBox="0 0 16 16">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                        </svg>
+                        <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Mes projets</h2>
+
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Tour d'horizon des projets web que j'ai pu réaliser.
+                        </p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
+
+                <a href="{{ url('/about') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-three-dots" viewBox="0 0 16 16">
+                            <path
+                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                        </svg>
+                        <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">A propos</h2>
+
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Pour en savoir plus sur mon parcours
+                        </p>
+
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
+
+                <a href="{{ url('/skills') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-boxes" viewBox="0 0 16 16">
+                            <path
+                                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+                        </svg>
+
+                        <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Compétences techniques</h2>
+
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Tour d'horizon des compétences techniques que je peux apporter.
+                        </p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
+
+                <a href="{{ url('/contact') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                        <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Contact</h2>
+
+                        <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Pour me contacter, c'est ici
+                        </p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    @endsection
