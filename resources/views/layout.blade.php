@@ -7,7 +7,8 @@
 
     <title>@yield('title', 'Portfolio Sylvain Périé')</title>
 
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

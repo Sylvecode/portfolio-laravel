@@ -17,37 +17,38 @@ use Illuminate\Support\Facades\Mail;
 */
 
 
+Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () {
 
-Route::get('/', function () {
-    return view('home');
+    Route::get('/', function () {
+        return view('home');
+    });
+
+    Route::get('/projects', function () {
+        return view('projects');
+    });
+
+    Route::get('/about', function () {
+        return view('about');
+    });
+
+    Route::get('/skills', function () {
+        return view('skills');
+    });
+
+    Route::get('/contact', function () {
+        return view('contact');
+    });
+
+    Route::post('/send-mail', [ContactController::class, 'send']);
+
+
+
+
+
+    /*
+    Route::get('/index', [PostController::class, 'index']);
+    Route::get('{post}', [PostController::class, 'show']);
+    */
 });
 
-Route::get('/projects', function () {
-    return view('projects');
-});
 
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/skills', function () {
-    return view('skills');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-
-Route::post('/send-mail', [ContactController::class, 'send']);
-
-
-
-
-
-
-/*
-Route::get('/index', [PostController::class, 'index']);
-Route::get('{post}', [PostController::class, 'show']);
-*/

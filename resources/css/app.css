@@ -1,12 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #welcome {
     font-size: 24px;
     color: #333;
     font-family: Arial, sans-serif;
-            text-align: center;
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -20,35 +20,18 @@ header {
     padding: 15px 30px;
 }
 
-.start {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.end {
-    justify-content: end;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 40px;
-
+    /* La propriété gap est gérée par Tailwind avec gap-xxpx dans le HTML */
 }
-
 
 nav ul li a {
     text-decoration: none;
     color: #333;
-    flex-direction: row;
+    /* flex-direction est redondant avec Tailwind, à ne pas appliquer ici */
 }
-
-li {
-    gap: 40px;
-}
-
 
 nav ul li a:hover {
     color: #007bff;
@@ -59,12 +42,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
-    border-color: #e5e7eb
-}
-
-::after,
-::before {
-    --tw-content: ''
+    border-color: #e5e7eb;
 }
 
 html {
@@ -73,23 +51,23 @@ html {
     -moz-tab-size: 4;
     tab-size: 4;
     font-family: Figtree, sans-serif;
-    font-feature-settings: normal
+    font-feature-settings: normal;
 }
 
 body {
     margin: 0;
-    line-height: inherit
+    line-height: inherit;
 }
 
 hr {
     height: 0;
     color: inherit;
-    border-top-width: 1px
+    border-top-width: 1px;
 }
 
 abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
+    text-decoration: underline dotted;
 }
 
 h1,
@@ -99,18 +77,19 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: inherit
+    font-weight: inherit;
 }
 
 a {
     color: inherit;
-    text-decoration: inherit
+    text-decoration: inherit;
 }
 
 b,
 strong {
-    font-weight: bolder
+    font-weight: bolder;
 }
+
 
 
 code,
