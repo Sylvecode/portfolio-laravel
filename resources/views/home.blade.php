@@ -27,7 +27,7 @@
 <div class="flex sm:flex sm:justify-center sm:items-center  flex-col">
     <div class=" p-6 lg:p-8">
         <div class="flex justify-center">
-            <img src="profile_pic_sylvain.jpg" class="imgSylv rounded-full border-10 border-white"
+            <img src="{{ asset('images/profile_pic_sylvain.jpg') }}" class="imgSylv rounded-full border-10 border-white"
                 style="width: 220px; height: 220px; border: 2px solid white; object-fit:cover; object-position: 50% 20%; margin-top:20px;">
         </div>
         <div class="flex justify-center" style="margin-top: 40px">
@@ -40,7 +40,7 @@
 
         <div class="mt-16">
             <div class="flex">
-                <a href="{{ url('/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -62,7 +62,7 @@
                     </svg>
                 </a>
 
-                <a href="{{ url('/about') }}"
+                <a href="{{ url(app()->getLocale() . '/about') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -85,7 +85,7 @@
                     </svg>
                 </a>
 
-                <a href="{{ url('/skills') }}"
+                <a href="{{ url(app()->getLocale() . '/skills') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -108,7 +108,7 @@
                     </svg>
                 </a>
 
-                <a href="{{ url('/contact') }}"
+                <a href="{{ url(app()->getLocale() . '/contact') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
