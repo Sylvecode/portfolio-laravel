@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; {{ date('Y') }} Sylvain Périé. Tous droits réservés.</p>
+    <p class="dark:text-gray-500">&copy;  {{ date('Y') }} Sylvain Périé.  {{__('copyright')}}.</p>
 </footer>
 
 <style>
