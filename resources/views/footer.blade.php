@@ -1,5 +1,5 @@
 <footer>
-    <p class="dark:text-gray-500">&copy;  {{ date('Y') }} Sylvain Périé.  {{__('copyright')}}.</p>
+    <p class="dark:text-gray-500">&copy; {{ date('Y') }} Sylvain Périé. {{__('copyright')}}.</p>
 </footer>
 
 <style>
@@ -11,13 +11,14 @@
         margin: auto;
         width: 100vw;
     }
-    footer p {
 
-    }
+    footer p {}
+
     footer a {
         color: #007bff;
         text-decoration: none;
     }
+
     footer a:hover {
         text-decoration: underline;
     }
