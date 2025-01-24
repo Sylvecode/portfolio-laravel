@@ -6,198 +6,173 @@
 
 <body
     class="antialiased bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-
-    <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen">
-        <div class="max-w-7xl mx-auto p-6 lg:p-8">
-
-            <div class="mt-16 h-20 bg-black">
-                <div class="">
-                    <div class="Pixhub" style="height: 200px; width:200px; margin:50px;">
-                        <a href="{{ url('/projects') }}"
-                            class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div
-                                    class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full m-10">
-                                    <img src="{{ asset('images/logo_kotlin.png') }}" alt="logo kotlin"
-                                        style="scale: 70%;">
-                                </div>
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Pixhub</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    App mobile android calendrier des sorties cinéma, séries, jv, anime.
-                                </p>
-                                <img src="{{ asset('images/screen_frequencies.jpg') }}"
-                                    style="scale: 50%; margin: 20px">
-                                <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                    style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
+    <div class="mt-10 flex flex-col justify-center p-6 lg:p-8 gap-10">
+        <div class="flex flex-row gap-10 justify-center">
+            <div class="flex flex-row gap-10">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_kotlin.png') }}" alt="logo kotlin" class="w-10 h-10">
+                            <img src="{{ asset('images/logo_springboot.png') }}" alt="logo springboot"
+                                class="w-10 h-10">
+                        </div>
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="flex w-10 h-10 opacity-90">
+                        </div>
                     </div>
 
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Pixhub</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Application mobile android calendrier des sorties cinéma, séries, jv, anime.
+                    </p>
+                    <div class="mt-4 mx-auto">
+                        <img src="{{ asset('images/screen_pixhub.jpg') }}" class="w-[150px] h-[300px] rounded-md">
+                    </div>
 
-                    <a href="https://laracasts.com"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_kotlin.png') }}" alt="logo kotlin" style="scale: 70%;">
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Foot Passion</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Application mobile android de mise à jour de matches de foot.
-                            </p>
-                            <img src="{{ asset('images/screen_foot_passion.jpg') }}" style="scale: 100%; margin: 20px">
-                            <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
+                </a>
+            </div>
+            <div class="flex flex-row gap-10 justify-center">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_kotlin.png') }}" alt="logo kotlin" class="w-10 h-10">
+                            <img src="{{ asset('images/logo_springboot.png') }}" alt="logo springboot"
+                                class="w-10 h-10">
                         </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <a href="https://laracasts.com"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_php.png') }}" alt="logo kotlin" style="scale: 90%;">
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Exercices PHP</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Exercices CRUD en php. Session, cookies, bootstap.
-                            </p>
-                            <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="w-10 h-10 opacity-90">
                         </div>
+                    </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Foot Passion
+                    </h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Application mobile android de mise à jour de matches de foot.
+                    </p>
 
-                    <a href="https://laravel-news.com"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_wordpress.png') }}">
-                            </div>
+                    <div class="mt-4">
+                        <img src="{{ asset('images/screen_foot_passion.jpg') }}"
+                            class="w-full h-[300px] object-cover rounded-md">
+                    </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Animalin</h2>
+                </a>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Site wordpress fictif d'une boutique de vente en ligne de chiens et chats de race.
-                            </p>
-                            <img src="{{ asset('images/screen_animalin.jpg') }}" style="scale: 110%; margin: 20px">
-                            <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-
-
-                    <a href="https://easyupload.jedeploiemonappli.com/"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_php.png') }}" alt="logo kotlin" style="scale: 90%;">
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">EasyUpload</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Participation au projet collaboratif EasyUpload, site de transfert de fichiers.
-                            </p>
-                            <img src="{{ asset('images/screen_easyupload.jpg') }}" style="scale: 110%; margin: 20px">
-                            <img src="{{ asset('images/logo_github.png') }}"
-                                href="https://github.com/Sylvecode/EasyUpload" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <a href="https://frequencies.fr/"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_react.png') }}" alt="logo kotlin" style="scale: 90%;">
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Frequencies.fr</h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Participation au développement du site web Frequencies.fr lors de mon stage de fin
-                                d'études.
-                            </p>
-                            <img src="{{ asset('images/screen_frequencies.jpg') }}" style="scale: 110%; margin: 20px">
-                            <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-
-                    <a href="https://laravel-news.com"
-                        class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="{{ asset('images/logo_js.png') }}" alt="logo kotlin" style="scale: 90%;">
-                            </div>
-
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Discord Bot Pokémon
-                            </h2>
-
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Bot discord qui donne les codes de distribution Pokémon. Script Javascript de
-                                webscrapping de page Poképédia.
-                            </p>
-                            <img src="{{ asset('images/screen_pokecodes.jpg') }}" style="scale: 110%; margin: 20px">
-                            <img src="{{ asset('images/logo_github.png') }}" class="flex justify-end "
-                                style="width: 40px; height: 40px; opacity: 90%; margin: 20px">
-                        </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                    </a>
-                </div>
             </div>
         </div>
-    </div>
+        <div class="flex flex-row gap-10 justify-center">
+            <div class="flex flex-row gap-10">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_wordpress.png') }}" alt="logo kotlin" class="w-14 h-14">
+                        </div>
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="flex w-10 h-10 opacity-90">
+                        </div>
+                    </div>
+
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Animalin</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Boutique en ligne fictive de vente de chiens et chats de race.
+                    </p>
+                    <div class="mt-4">
+                        <img src="{{ asset('images/screen_animalin.jpg') }}"
+                            class="w-full h-[300px] object-cover rounded-md">
+                    </div>
+
+                </a>
+            </div>
+            <div class="flex flex-row gap-10 justify-center">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_react.png') }}" alt="logo kotlin" class="w-11 h-10">
+                            <img src="{{ asset('images/logo_typescript.png') }}" alt="logo springboot"
+                                class="w-10 h-10">
+                        </div>
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="w-10 h-10 opacity-90">
+                        </div>
+                    </div>
+
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Frequencies
+                    </h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Participation au développement du site Frequencies lors de mon stage de fin d'études chez
+                        Frequencies
+                    </p>
+
+                    <div class="mt-4">
+                        <img src="{{ asset('images/screen_frequencies.jpg') }}"
+                            class="w-full h-[300px] object-cover rounded-md">
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+        <div class="flex flex-row gap-10 justify-center">
+            <div class="flex flex-row gap-10">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_php.png') }}" alt="logo kotlin" class="w-13 h-10">
+                            <img src="{{ asset('images/logo_js.png') }}" alt="logo springboot" class="w-11 h-11">
+                        </div>
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="flex w-10 h-10 opacity-90">
+                        </div>
+                    </div>
+
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">EasyUpload</h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Participation au projet open source EasyUpload. Site de transfert de fichiers.
+                    </p>
+                    <div class="mt-4">
+                        <img src="{{ asset('images/screen_easyupload.jpg') }}"
+                            class="w-full h-[300px] object-cover rounded-md">
+                    </div>
+
+                </a>
+            </div>
+            <div class="flex flex-row gap-10 justify-center">
+                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                    class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
+                    <div class="h-16 w-full flex items-center">
+                        <div class="flex gap-4">
+                            <img src="{{ asset('images/logo_js.png') }}" alt="logo kotlin" class="w-11 h-11">
+                        </div>
+                        <div class="flex ml-auto">
+                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                                class="w-10 h-10 opacity-90">
+                        </div>
+                    </div>
+
+                    <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">PokéCodes
+                    </h2>
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
+                        Bot Discord distribuant les codes pokémon actuellement en distribution. Script JS de
+                        webscrapping
+                    </p>
+
+                    <div class="mt-4">
+                        <img src="{{ asset('images/screen_pokecodes.jpg') }}"
+                            class="w-full h-[300px] object-cover rounded-md">
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
 </body>
 @endsection

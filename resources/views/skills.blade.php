@@ -3,8 +3,8 @@
 @section('title', 'Compétences techniques')
 
 @section('content')
-<div>
-    <ul>
+<div class="flex justify-center m-10">
+    <ul class="text-black dark:text-white">
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
