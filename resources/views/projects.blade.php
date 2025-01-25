@@ -9,7 +9,7 @@
     <div class="mt-10 flex flex-col justify-center p-6 lg:p-8 gap-10">
         <div class="flex flex-row gap-10 justify-center">
             <div class="flex flex-row gap-10">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/pixhub') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="flex flex-row gap-10 justify-center">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/footpassion') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
@@ -65,11 +65,11 @@
         </div>
         <div class="flex flex-row gap-10 justify-center">
             <div class="flex flex-row gap-10">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/animalin') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
-                            <img src="{{ asset('images/logo_wordpress.png') }}" alt="logo kotlin" class="w-14 h-14">
+                            <img src="{{ asset('images/logo_wordpress.png') }}" alt="logo wordpress" class="w-14 h-14">
                         </div>
                         <div class="flex ml-auto">
                             <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
@@ -89,12 +89,12 @@
                 </a>
             </div>
             <div class="flex flex-row gap-10 justify-center">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/frequencies') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
-                            <img src="{{ asset('images/logo_react.png') }}" alt="logo kotlin" class="w-11 h-10">
-                            <img src="{{ asset('images/logo_typescript.png') }}" alt="logo springboot"
+                            <img src="{{ asset('images/logo_react.png') }}" alt="logo react" class="w-11 h-10">
+                            <img src="{{ asset('images/logo_typescript.png') }}" alt="logo typescript"
                                 class="w-10 h-10">
                         </div>
                         <div class="flex ml-auto">
@@ -121,7 +121,7 @@
         </div>
         <div class="flex flex-row gap-10 justify-center">
             <div class="flex flex-row gap-10">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/easyupload') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
@@ -146,11 +146,11 @@
                 </a>
             </div>
             <div class="flex flex-row gap-10 justify-center">
-                <a href="{{ url(app()->getLocale() . '/projects') }}"
+                <a href="{{ url(app()->getLocale() . '/pokecodes') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
-                            <img src="{{ asset('images/logo_js.png') }}" alt="logo js" class="w-13 h-11">
+                            <img src="{{ asset('images/logo_js.png') }}" loading="lazy" alt="logo js" class="w-13 h-11">
                         </div>
                         <div class="flex ml-auto">
                             <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"

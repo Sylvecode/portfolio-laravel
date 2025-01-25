@@ -43,6 +43,32 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () 
         return view('contact');
     });
 
+    Route::get('/pixhub', function () {
+        return view('pixhub');
+    });
+
+    Route::get('/footpassion', function () {
+        return view('footpassion');
+    });
+
+    Route::get('/animalin', function () {
+        return view('animalin');
+    });
+
+    Route::get('/frequencies', function () {
+        return view('frequencies');
+    });
+
+    Route::get('/easyupload', function () {
+        return view('easyupload');
+    });
+
+    Route::get('/pokecodes', function () {
+        return view('pokecodes');
+    });
+
+   
+
     Route::post('/send-mail', [ContactController::class, 'send']);
 
 
