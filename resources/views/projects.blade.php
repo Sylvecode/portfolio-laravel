@@ -28,7 +28,9 @@
                         Application mobile android calendrier des sorties cinéma, séries, jv, anime.
                     </p>
                     <div class="mt-4 mx-auto">
-                        <img src="{{ asset('images/screen_pixhub.jpg') }}" class="w-[150px] h-[300px] rounded-md border-solid border-2">
+                        <img src="{{ asset('images/screen_pixhub.jpg') }}"
+                        width="150" height="300"
+                            class="w-[150px] h-[300px] rounded-md border-solid border-2">
                     </div>
 
                 </a>
@@ -55,7 +57,7 @@
                     </p>
 
                     <div class="mt-4 mx-auto">
-                        <img src="{{ asset('images/screen_foot_passion.jpg') }}"
+                        <img src="{{ asset('images/screen_foot_passion.webp') }}" width="450" height="300"
                             class="w-[450px] h-[300px] object-cover rounded-md">
                     </div>
 

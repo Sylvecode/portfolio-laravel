@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: "class", // Correctement positionné
+    darkMode: "class", 
     content: [
-        "./resources/**/*.blade.php", // Fichiers Blade (vues Laravel)
-        "./resources/**/*.js", // Fichiers JavaScript
+        "./resources/**/*.blade.php", 
+        "./resources/**/*.js", 
     ],
     theme: {
         extend: {
