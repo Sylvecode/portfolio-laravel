@@ -8,6 +8,18 @@
     <p class="flex justify-center text-black dark:text-white m-10">Pixhub est une application mobile android développée
         en Kotlin qui propose un calendrier de films, séries, jeux vidéos, anime au sein d'une même application</p>
 
+        <div class="flex items-center gap-20 justify-center flex-row m-20">
+            <div class="flex flex-col items-center">
+            <img src="{{ asset('images/screen2_pixhub.gif') }}" class="flex justify-center w-[200px] h-[400px] rounded-md">
+            <p class="flex text-black dark:text-white items-center justify-center mt-10">Connexion & Création de compte</p>
+            </div>
+            <div class="flex flex-col items-center">
+            <img src="{{ asset('images/screen_pixhub.gif') }}" class="flex justify-center w-[200px] h-[400px] rounded-md">
+            <p class="text-black dark:text-white items-center justify-center mt-10">Caroussel des sorties</p>
+            </div>
+            
+        </div>
+
 
 
     <div
@@ -26,8 +38,20 @@
             <p class="">Springboot</p>
         </div>
         <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
+            <img src="{{ asset('images/logo_jpa.png') }}" alt="logo springboot" class="w-10 h-10 mb-2">
+            <p class="">JPA</p>
+        </div>
+        <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
+            <img src="{{ asset('images/logo_hibernate.png') }}" alt="logo springboot" class="w-10 h-10 mb-2">
+            <p class="">Hibernate</p>
+        </div>
+        <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
             <img src="{{ asset('images/logo_mysql.png') }}" alt="logo springboot" class="w-10 h-10 mb-2">
             <p class="">MySQL</p>
+        </div>
+        <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
+            <img src="{{ asset('images/logo_figma.svg') }}" alt="logo springboot" class="w-10 h-10 mb-2">
+            <p class="">Figma</p>
         </div>
 
     </div>
