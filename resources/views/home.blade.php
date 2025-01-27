@@ -53,8 +53,7 @@
                 style="width: 220px; height: 220px; border: 2px solid white; object-fit:cover; object-position: 50% 20%; margin-top:20px;">
         </div>
         <div class="flex justify-center dark:text-white" style="margin-top: 40px">
-            <p>Développeur Web & Web Mobile junior en recherche d'emploi / alternance à distance en France ou à
-                l'étranger</p>
+            <p>{{__('description')}}</p>
         </div>
     </div>
 

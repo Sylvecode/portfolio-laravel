@@ -20,8 +20,8 @@ class ContactController extends Controller
         Mail::raw(
             "Nom : {$validated['name']}\nE-mail : {$validated['email']}\n\nMessage :\n{$validated['message']}",
             function ($message) use ($validated) {
-                $message->to('perie.sylvain@gmail.com') // Votre adresse e-mail
-                    ->subject('Nouveau message depuis le formulaire du portfolio');
+                $message->to('sylvain.perie@hotmail.fr') // Votre adresse e-mail
+                    ->subject('Nouveau message reçu depuis le formulaire du portfolio');
             }
         );
 

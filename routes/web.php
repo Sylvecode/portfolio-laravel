@@ -67,14 +67,7 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () 
         return view('pokecodes');
     });
 
-   
-
     Route::post('/send-mail', [ContactController::class, 'send']);
-
-
-
-
-
     /*
     Route::get('/index', [PostController::class, 'index']);
     Route::get('{post}', [PostController::class, 'show']);
