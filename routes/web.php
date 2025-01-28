@@ -51,6 +51,11 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () 
         return view('footpassion');
     });
 
+    Route::get('/sylvainperie', function () {
+        return view('sylvainperie');
+    });
+
+
     Route::get('/animalin', function () {
         return view('animalin');
     });

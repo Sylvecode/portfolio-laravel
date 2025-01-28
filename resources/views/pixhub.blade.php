@@ -5,6 +5,7 @@
 @section('content')
 <div class="100vh mx-auto">
     <h1 class="flex justify-center text-black dark:text-white text-3xl m-20">Pixhub</h1>
+    <h2 class="italic flex justify-center text-black dark:text-white m-20">Architecture : MVVM</h2>
     <p class="flex justify-center text-black dark:text-white m-10">Pixhub est une application mobile android développée
         en Kotlin qui propose un calendrier de films, séries, jeux vidéos, anime au sein d'une même application</p>
 

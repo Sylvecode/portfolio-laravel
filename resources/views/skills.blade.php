@@ -10,7 +10,6 @@
         <li>JS</li>
         <li>React JS</li>
         <li>Kotlin</li>
-        <li>Java JEE</li>
         <li>Springboot</li>
         <li>PHP Laravel</li>
         <li>MySQL</li>

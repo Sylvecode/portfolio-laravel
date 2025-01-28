@@ -5,6 +5,7 @@
 @section('content')
 <div class="100vh mx-auto">
     <h1 class="flex justify-center text-black dark:text-white text-3xl m-20">Foot Passion</h1>
+    <h2 class="italic flex justify-center text-black dark:text-white m-20">Architecture : MVVM</h2>
     <p class="flex justify-center text-black dark:text-white m-10">Foot Passion est une application mobile android développée en Kotlin qui permet de créer un match, modifier le score, terminer le match et afficher l'historique des matches terminés. Cette app fait appel à mon webservice qui intéragit avec une base de donnée mysql.</p>
     <div
         class="flex flex-row justify-center gap-20 p-10 text-black dark:text-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 100-vh">
