@@ -13,6 +13,8 @@
                     class="hover:text-blue-500 dark:text-white">LinkedIn</a></li>
             <li><a href="{{ url(app()->getLocale() . '/contact') }}"
                     class="hover:text-blue-500 dark:text-white">{{__('contact')}}</a></li>
+            <li><a target="_blank" href="https://github.com/Sylvecode"><img src="{{ asset('images/logo_githubwhite.png') }}" alt="github logo" class="w-6 h-6 hover:scale-110 dark:block hidden" title="Github"><img src="{{ asset('images/logo_github.png') }}" alt="github logo" class="block dark:hidden w-6 h-6 hover:scale-110"></a></li>
+            <li><a target="_blank" href="https://gitlab.com/Sylvecode"><img src="{{ asset('images/logo_gitlab.png') }}" alt="gitlab logo" class="w-6 h-6 hover:scale-110" title="GitLab"></a></li>
         </ul>
 
         <ul class="flex space-x-10">

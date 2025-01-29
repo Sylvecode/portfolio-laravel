@@ -9,17 +9,34 @@
     <p class="flex justify-center text-black dark:text-white m-10">Pixhub est une application mobile android développée
         en Kotlin qui propose un calendrier de films, séries, jeux vidéos, anime au sein d'une même application</p>
 
-        <div class="flex items-center gap-20 justify-center flex-row m-20">
-            <div class="flex flex-col items-center">
-            <img src="{{ asset('images/screen2_pixhub.gif') }}" class="flex justify-center w-[200px] h-[400px] rounded-md">
-            <p class="flex text-black dark:text-white items-center justify-center mt-10">Connexion & Création de compte</p>
-            </div>
-            <div class="flex flex-col items-center">
-            <img src="{{ asset('images/screen_pixhub.gif') }}" class="flex justify-center w-[200px] h-[400px] rounded-md">
-            <p class="text-black dark:text-white items-center justify-center mt-10">Caroussel des sorties</p>
-            </div>
-            
+    <div class="flex items-center gap-20 justify-center flex-row m-20">
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('images/screen2_pixhub.gif') }}"
+                class="flex justify-center w-[200px] h-[400px] rounded-md">
+            <p class="flex text-black dark:text-white items-center justify-center mt-10">Connexion & Création de compte
+            </p>
         </div>
+        <div class="flex flex-col items-center mr-20">
+            <img src="{{ asset('images/screen_pixhub.gif') }}"
+                class="flex justify-center w-[200px] h-[400px] rounded-md">
+            <p class="text-black dark:text-white items-center justify-center mt-10">Caroussel des sorties</p>
+        </div>
+        <div
+            class="flex flex-col items-center p-6 w-[350px] h-[300px] scale-100 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+            <div class="p-8 flex items-center justify-center flex-row justify-between">
+                <p class="flex justify-start text-black dark:text-white mr-8">Github Pixhub Client</p>
+                <a target="_blank" href="https://github.com/Sylvecode/PixhubAndroid"><img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                class="flex justify-end w-10 h-10 opacity-90 hover:scale-110"></a>
+                
+            </div>
+            <div class="p-8 flex justify-start items-center flex-row">
+                <p class="flex justify-start text-black dark:text-white mr-8">Github Pixhub Webservice</p>
+                <a target="_blank" href="https://github.com/Sylvecode/PixhubAPI"><img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
+                class="flex justify-end w-10 h-10 opacity-90 hover:scale-110"></a>
+            </div>
+        </div>
+
+    </div>
 
 
 
