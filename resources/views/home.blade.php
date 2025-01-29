@@ -47,7 +47,7 @@
 </script>
 
 <div class="flex sm:flex sm:justify-center sm:items-center  flex-col">
-    <div class=" p-6 lg:p-8">
+    <div class="p-6 lg:p-8">
         <div class="flex justify-center">
             <img src="{{ asset('images/profile_pic_sylvain.webp') }}"
                 class="imgSylv rounded-full border-10 border-white"
