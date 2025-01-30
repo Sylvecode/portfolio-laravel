@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Mail;
 
 // Redirection vers la locale par défaut
 Route::get('/', function () {
-    return redirect('/fr'); // Remplacez 'en' par votre locale par défaut
+    return redirect('/fr'); 
 });
 
 Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () {

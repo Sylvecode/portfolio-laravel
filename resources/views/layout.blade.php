@@ -32,7 +32,7 @@
 
     @yield('content')
 
-    @include('footer');
+    @include('footer')
 
 </body>
 
