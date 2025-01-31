@@ -7,7 +7,11 @@
     <h1 class="flex justify-center text-black dark:text-white text-3xl m-20">Pixhub</h1>
     <p class="flex justify-center text-black dark:text-white m-8">Pixhub est une application mobile android développée
         en Kotlin qui propose un calendrier de films, séries, jeux vidéos, anime au sein d'une même application</p>
-    <p class="flex justify-center text-black dark:text-white m-8">Ce projet est découpé en deux parties, un client, qui fait appel à un webservice pour les insertions en base de données. Ce choix a été fait dans l'optique de développer ultérieurement une version web qui réutiliserait ce même webservice.</p>
+    <p class="flex justify-center text-black dark:text-white m-8">L'utilisateur aura, a terme, la possibilité de tracker
+        la sortie d'une oeuvre, de la noter, ajouter des contacts et intéragir avec eux.</p>
+    <p class="flex justify-center text-black dark:text-white m-8">Ce projet est découpé en deux parties, un client, qui
+        fait appel à un webservice pour les insertions en base de données. Ce choix a été fait dans l'optique de
+        développer ultérieurement une version web qui réutiliserait ce même webservice.</p>
 
     <div class="flex items-center gap-20 justify-center flex-row m-20">
         <div class="flex flex-col items-center">
@@ -35,7 +39,8 @@
                 <li class="text-lime-700 dark:text-lime-600">Consulter un acteur</li>
                 <li class="text-gray-600 dark:text-gray-600">Consulter les sorties séries du mois</li>
                 <li class="text-gray-600 dark:text-gray-600">Consulter une série</li>
-                <li class="text-gray-600 dark:text-gray-600">Consulter les sorties jeux vidéos du mois</li></li>
+                <li class="text-gray-600 dark:text-gray-600">Consulter les sorties jeux vidéos du mois</li>
+                </li>
                 <li class="text-gray-600 dark:text-gray-600">Consulter un jeu vidéo</li>
                 <li></li>
             </ul>
@@ -65,8 +70,7 @@
     <div
         class="flex flex-row justify-center gap-20 p-5 text-black dark:text-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 100-vh">
         <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
-            <img src="{{ asset('images/logo_intellij.png') }}" alt="logo kotlin"
-                class="justify-center w-11 h-11 mb-2">
+            <img src="{{ asset('images/logo_intellij.png') }}" alt="logo kotlin" class="justify-center w-11 h-11 mb-2">
             <p class="flex justify-center">IntelliJ</p>
         </div>
         <div class="flex flex-col m-4 items-center justify-center hover:scale-110">
