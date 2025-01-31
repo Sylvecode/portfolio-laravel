@@ -21,15 +21,15 @@
 
                     <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Pixhub</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
-                    {{__('pixhub_description')}}
+                        {{__('pixhub_description')}}
                     </p>
                     <div class="mt-4 mx-auto">
-                        <img src="{{ asset('images/screen_pixhub.jpg') }}" width="150" height="300"
+                        <img src="{{ asset('images/screen_pixhub.jpg') }}"
                             class="w-[150px] h-[300px] rounded-md border-solid border-2">
                     </div>
-
                 </a>
             </div>
+
             <div class="flex flex-row gap-10 justify-center">
                 <a href="{{ url(app()->getLocale() . '/footpassion') }}"
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex flex-col motion-safe:hover:scale-[1.02] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 w-[700px] h-[500px]">
@@ -38,10 +38,6 @@
                             <img src="{{ asset('images/logo_kotlin.png') }}" alt="logo kotlin" class="w-10 h-10">
                             <img src="{{ asset('images/logo_springboot.png') }}" alt="logo springboot"
                                 class="w-10 h-10">
-                        </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="w-10 h-10 opacity-90">
                         </div>
                     </div>
 
@@ -70,10 +66,6 @@
                             <img src="{{ asset('images/logo_laravel.svg') }}" alt="logo laravel" class="w-11 h-11">
 
                         </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="flex w-10 h-10 opacity-90">
-                        </div>
                     </div>
 
                     <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">sylvainperie.com
@@ -94,10 +86,6 @@
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
                             <img src="{{ asset('images/logo_wordpress.png') }}" alt="logo wordpress" class="w-14 h-14">
-                        </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="flex w-10 h-10 opacity-90">
                         </div>
                     </div>
 
@@ -124,10 +112,6 @@
                             <img src="{{ asset('images/logo_typescript.png') }}" alt="logo typescript"
                                 class="w-10 h-10">
                         </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="w-10 h-10 opacity-90">
-                        </div>
                     </div>
 
                     <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Frequencies
@@ -152,10 +136,6 @@
                             <img src="{{ asset('images/logo_php.png') }}" alt="logo php" class="w-13 h-10">
                             <img src="{{ asset('images/logo_js.png') }}" alt="logo js" class="w-13 h-11">
                         </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="flex w-10 h-10 opacity-90">
-                        </div>
                     </div>
 
                     <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">EasyUpload</h2>
@@ -177,10 +157,6 @@
                     <div class="h-16 w-full flex items-center">
                         <div class="flex gap-4">
                             <img src="{{ asset('images/logo_js.png') }}" alt="logo js" class="w-13 h-10">
-                        </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="flex w-10 h-10 opacity-90">
                         </div>
                     </div>
 
