@@ -1,36 +1,36 @@
-<header
-    class="bg-dots-darker bg-center dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white transition-all">
+@php
+    $currentPath = request()->path();
+    if (in_array($currentPath, ['fr', 'en', 'th'])) {
+        $currentPath = '';
+    } else {
+        $currentPath = preg_replace('/^(fr|en|th)\//', '', $currentPath);
+    }
+@endphp
+
+<header class="bg-dots-darker bg-center dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white transition-all">
     <nav class="flex justify-between items-center px-6 py-4">
         <ul class="flex items-center">
             <li>
-                <a href="{{ url(app()->getLocale() . '/') }}" class="text-xl font-bold dark:text-white">Portfolio
-                    Sylvain Périé</a>
+                <a href="{{ url(app()->getLocale() . '/') }}" class="text-xl font-bold dark:text-white">Portfolio Sylvain Périé</a>
             </li>
         </ul>
 
         <ul class="flex items-center space-x-10">
-            <li><a target="_blank" href="{{ url('https://www.linkedin.com/in/sylvain-p%C3%A9ri%C3%A9-1ba98088/') }}"
-                    class="hover:text-blue-500 dark:text-white"><img src="{{ asset('images/logo_linkedin.png') }}"
-                        alt="logo LinkedIn" class="w-6 h-6 hover:scale-110" title="LinkedIn"></a></li>
-            <li><a target="_blank" href="https://github.com/Sylvecode"><img
-                        src="{{ asset('images/logo_githubwhite.png') }}" alt="github logo"
-                        class="w-6 h-6 hover:scale-110 dark:block hidden" title="Github"><img
-                        src="{{ asset('images/logo_github.png') }}" alt="github logo"
-                        class="block dark:hidden w-6 h-6 hover:scale-110"></a></li>
-            <li><a target="_blank" href="https://gitlab.com/Sylvecode"><img src="{{ asset('images/logo_gitlab.png') }}"
-                        alt="gitlab logo" class="w-6 h-6 hover:scale-110" title="GitLab"></a></li>
-            <li><a href="{{ url(app()->getLocale() . '/contact') }}"
-                    class="hover:text-blue-500 dark:text-white">{{__('contact')}}</a></li>
+            <li><a target="_blank" href="{{ url('https://www.linkedin.com/in/sylvain-p%C3%A9ri%C3%A9-1ba98088/') }}" class="hover:text-blue-500 dark:text-white">
+                <img src="{{ asset('images/logo_linkedin.png') }}" alt="logo LinkedIn" class="w-6 h-6 hover:scale-110" title="LinkedIn"></a></li>
+            <li><a target="_blank" href="https://github.com/Sylvecode"><img src="{{ asset('images/logo_githubwhite.png') }}" alt="github logo" class="w-6 h-6 hover:scale-110 dark:block hidden" title="Github"><img src="{{ asset('images/logo_github.png') }}" alt="github logo" class="block dark:hidden w-6 h-6 hover:scale-110"></a></li>
+            <li><a target="_blank" href="https://gitlab.com/Sylvecode"><img src="{{ asset('images/logo_gitlab.png') }}" alt="gitlab logo" class="w-6 h-6 hover:scale-110" title="GitLab"></a></li>
+            <li><a href="{{ url(app()->getLocale() . '/contact' . $currentPath) }}" class="hover:text-blue-500 dark:text-white">{{__('contact')}}</a></li>
         </ul>
 
         <ul class="flex space-x-10">
-            <li><a href="{{ url('/fr') }}"><img src="{{ asset('images/france_flag.png') }}"
+            <li><a href="{{ url('/fr/' . $currentPath) }}"><img src="{{ asset('images/france_flag.png') }}"
                         class="p-1 size-9 rounded-full hover:scale-110 {{ app()->getLocale() === 'fr' ? 'border border-solid border-gray-800 dark:border-white' : '' }}"></a>
             </li>
-            <li><a href="{{ url('/en') }}"><img src="{{ asset('images/uk_flag.png') }}"
+            <li><a href="{{ url('/en/' . $currentPath) }}"><img src="{{ asset('images/uk_flag.png') }}"
                         class="p-1 size-9 rounded-full hover:scale-110 {{ app()->getLocale() === 'en' ? 'border border-solid border-gray-800 dark:border-white' : '' }}"></a>
             </li>
-            <li><a href="{{ url('/th') }}"><img src="{{ asset('images/th_flag.png') }}"
+            <li><a href="{{ url('/th/' . $currentPath) }}"><img src="{{ asset('images/th_flag.png') }}"
                         class="p-1 size-9 rounded-full hover:scale-110 {{ app()->getLocale() === 'th' ? 'border border-solid border-gray-800 dark:border-white' : '' }}"></a>
             </li>
             <li>

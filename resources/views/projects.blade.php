@@ -17,15 +17,11 @@
                             <img src="{{ asset('images/logo_springboot.png') }}" alt="logo springboot"
                                 class="w-10 h-10">
                         </div>
-                        <div class="flex ml-auto">
-                            <img src="{{ asset('images/logo_github.png') }}" alt="GitHub Logo"
-                                class="flex w-10 h-10 opacity-90">
-                        </div>
                     </div>
 
                     <h2 class="flex text-xl font-semibold text-gray-900 dark:text-white justify-center">Pixhub</h2>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed text-center">
-                        Application mobile android calendrier des sorties cinéma, séries, jv, anime.
+                    {{__('pixhub_description')}}
                     </p>
                     <div class="mt-4 mx-auto">
                         <img src="{{ asset('images/screen_pixhub.jpg') }}" width="150" height="300"
