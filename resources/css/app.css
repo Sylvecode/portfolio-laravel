@@ -48,7 +48,7 @@ nav ul li a:hover {
     border-style: solid;
     border-color: #e5e7eb;
 }
-
+/*
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -57,7 +57,7 @@ html {
     font-family: Figtree, sans-serif;
     font-feature-settings: normal;
 }
-
+*/
 body {
     margin: 0;
     line-height: inherit;
@@ -134,7 +134,8 @@ footer {
     padding: 20px;
     text-align: center;
     border-top: 1px solid #ddd;
-    width: 100vw;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 footer a {

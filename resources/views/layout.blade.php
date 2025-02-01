@@ -25,14 +25,17 @@
 </head>
 
 <body
-    class="antialiased bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+    class="flex flex-col w-full min-h-screen antialiased bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
 
     @include('header')
 
-    @yield('content')
+    <main class="w-100">
+        @yield('content')
+    </main>
 
     @include('footer')
 
 </body>
+
 
 </html>

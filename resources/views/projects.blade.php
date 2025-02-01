@@ -4,8 +4,8 @@
 
 @section('content')
 
-<body
-    class="antialiased bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+<div
+    class="">
     <div class="mt-10 flex flex-col justify-center p-6 lg:p-8 gap-10">
         <div class="flex flex-row gap-10 justify-center">
             <div class="flex flex-row gap-10">
@@ -173,5 +173,5 @@
                 </a>
             </div>
         </div>
-</body>
+</div>
 @endsection
