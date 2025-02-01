@@ -270,8 +270,11 @@ video {
     display: block;
 }
 
+.imgSylv {
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
 .imgSylv:hover {
-    scale: 110%;
+    transform: scale(1.1);
 }
 
 img,
