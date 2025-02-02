@@ -51,7 +51,7 @@
         <div class="flex justify-center">
             <img src="{{ asset('images/profile_pic_sylvain.webp') }}"
                 class="imgSylv rounded-full border-10 border-white"
-                style="width: 220px; height: 220px; border: 2px solid white; object-fit:cover; object-position: 50% 20%; margin-top:20px;">
+                style="width: 200px; height: 200px; border: 2px solid white; object-fit:cover; object-position: 50% 20%; margin-top:20px;">
         </div>
         <div class="flex justify-center dark:text-white" style="margin-top: 40px">
             <p>{{__('description')}}</p>
