@@ -1,7 +1,7 @@
 <footer class="w-full flex flex-row items-center justify-between p-6 dark:bg-gray-800 dark:border-none">
     <p class="dark:text-gray-200">&copy; {{ date('Y') }} Sylvain Périé. {{__('copyright')}}.</p>
 
-    <ul class="flex items-center space-x-10">
+    <ul class="flex items-center icons space-x-10">
         <li><a target="_blank" href="{{ url('https://www.linkedin.com/in/sylvain-p%C3%A9ri%C3%A9-1ba98088/') }}"
                 class="hover:text-blue-500 dark:text-white">
                 <img src="{{ asset('images/logo_linkedin.png') }}" alt="logo LinkedIn" class="w-6 h-6 hover:scale-110" title="LinkedIn">
