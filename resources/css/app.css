@@ -17,7 +17,7 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-between; /* Titre à gauche, icônes à droite */
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
@@ -30,13 +30,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    /* La propriété gap est gérée par Tailwind avec gap-xxpx dans le HTML */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
-    /* flex-direction est redondant avec Tailwind, à ne pas appliquer ici */
 }
 
 nav ul li a:hover {

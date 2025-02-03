@@ -50,7 +50,7 @@
     <div class="p-6 lg:p-8">
         <div class="flex justify-center">
             <img src="{{ asset('images/profile_pic_sylvain.webp') }}"
-                class="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] max-w-full h-auto border-2 border-white object-cover object-[50%_20%] mt-3 sm:mt-5 rounded-full mx-auto block"
+                class="imgSylv w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] max-w-full h-auto border-2 border-white object-cover object-[50%_20%] mt-3 sm:mt-5 rounded-full mx-auto block"
                 style="aspect-ratio: 1 / 1;">
         </div>
         <div class="flex justify-center dark:text-white" style="margin-top: 40px">
